@@ -1,0 +1,38 @@
+/* Grid */
+/* line 1, D:/Projects/likwid-ui-library/less/scss/base/_reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 4, D:/Projects/likwid-ui-library/less/scss/components/_grid.scss */
+.lw.container {
+  max-width: 1280px;
+}
+
+/* line 8, D:/Projects/likwid-ui-library/less/scss/components/_grid.scss */
+.lw.container-fluid, .lw.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 15, D:/Projects/likwid-ui-library/less/scss/components/_grid.scss */
+.lw.row {
+  display: flex;
+}
+
+/* line 18, D:/Projects/likwid-ui-library/less/scss/components/_grid.scss */
+.lw.row:before, .lw.row:after {
+  content: "";
+  /*display: table ;*/
+  clear: both;
+}
+
+/* line 27, D:/Projects/likwid-ui-library/less/scss/components/_grid.scss */
+.lw.col {
+  background: purple;
+  width: 8.33333%;
+}
+
+/*# sourceMappingURL=../../css/lw.map */

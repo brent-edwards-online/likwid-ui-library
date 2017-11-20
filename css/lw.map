@@ -1,0 +1,28 @@
+{
+	"version": 3,
+	"file": "../less/scss/lw.css",
+	"sources": [
+		"../less/scss/lw.scss",
+		"../less/scss/variables/_variables.scss",
+		"../less/scss/variables/_colors.scss",
+		"../less/scss/functions/_functions.scss",
+		"../less/scss/variables/_grid.scss",
+		"../less/scss/base/_mixins.scss",
+		"../less/scss/base/_reset.scss",
+		"../less/scss/base/_base.scss",
+		"../less/scss/components/_grid.scss"
+	],
+	"sourcesContent": [
+		"@import 'variables/variables';\r\n@import 'variables/colors';\r\n\r\n@import 'functions/functions';\r\n\r\n@import 'variables/grid';\r\n\r\n@import 'base/mixins';\r\n@import 'base/reset';\r\n@import 'base/base';\r\n\r\n@import 'components/grid';\r\n",
+		"$col-blue: #0091D5;\r\n$col-purple: #4E20A1;\r\n$col-red: #C11D33;\r\n$col-yellow: #ECCF4B;\r\n\r\n$col-black: #000000;\r\n$col-darkgrey: #2A3037;\r\n$col-beige: #F4F4F4;\r\n$col-white: #ffffff;\r\n\r\n$width-1: 90px;\r\n$width-2: 180px;\r\n$width-3: 270px;\r\n$width-4: 360px;\r\n$width-5: 450px;\r\n$width-6: 540px;\r\n$width-7: 630px;\r\n$width-8: 720px;\r\n$width-9: 810px;\r\n$width-10: 900px;\r\n$width-11: 990px;\r\n$width-12: 1080px;\r\n\r\n$pad-3: 3px;\r\n$pad-5: 5px;\r\n$pad-10: 10px;\r\n$pad-20: 20px;\r\n\r\n$dist-xs: 3px; \r\n$dist-sm: 5px;\r\n$dist-md: 10px;\r\n$dist-lg: 15px;\r\n$dist-xl: 30px;\r\n$dist-xxl: 40px;\r\n$dist-xxxl: 60px;\r\n$dist-xxxl: 80px;\r\n\r\n$percent-10: 10%;\r\n$percent-20: 20%;\r\n$percent-30: 30%;\r\n$percent-40: 40%;\r\n$percent-50: 50%;\r\n$percent-60: 60%;\r\n$percent-70: 70%;\r\n$percent-80: 80%;\r\n$percent-90: 90%;\r\n$percent-100: 100%;\r\n\r\n$percent-33: 33.3333333333%;\r\n$percent-66: 66.6666666666%;\r\n$percent-100: 100%;\r\n\r\n\r\n",
+		"$col-blue: #0091D5;\r\n$col-purple: #4E20A1;\r\n$col-red: #C11D33;\r\n$col-yellow: #ECCF4B;\r\n\r\n$col-black: #000000;\r\n$col-darkgrey: #2A3037;\r\n$col-beige: #F4F4F4;\r\n$col-white: #ffffff;\r\n\r\n$width-1: 90px;\r\n$width-2: 180px;\r\n$width-3: 270px;\r\n$width-4: 360px;\r\n$width-5: 450px;\r\n$width-6: 540px;\r\n$width-7: 630px;\r\n$width-8: 720px;\r\n$width-9: 810px;\r\n$width-10: 900px;\r\n$width-11: 990px;\r\n$width-12: 1080px;\r\n\r\n$pad-3: 3px;\r\n$pad-5: 5px;\r\n$pad-10: 10px;\r\n$pad-20: 20px;\r\n\r\n$dist-xs: 3px; \r\n$dist-sm: 5px;\r\n$dist-md: 10px;\r\n$dist-lg: 15px;\r\n$dist-xl: 30px;\r\n$dist-xxl: 40px;\r\n$dist-xxxl: 60px;\r\n$dist-xxxl: 80px;\r\n\r\n$percent-10: 10%;\r\n$percent-20: 20%;\r\n$percent-30: 30%;\r\n$percent-40: 40%;\r\n$percent-50: 50%;\r\n$percent-60: 60%;\r\n$percent-70: 70%;\r\n$percent-80: 80%;\r\n$percent-90: 90%;\r\n$percent-100: 100%;\r\n\r\n$percent-33: 33.33333%;\r\n\r\n",
+		"@function calc-percent($target, $container) {\r\n  @return ($target / $container) * 100%;\r\n}",
+		"/* Grid */\r\n$num-colums: 12;\r\n\r\n$container-gutter: 30px;\r\n\r\n$max-container-width: 1280px;",
+		"",
+		"* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n",
+		"",
+		"// lw grid\r\n\r\n.lw {\r\n  &.container {    \r\n    max-width: $max-container-width;\r\n  }\r\n\r\n  &.container-fluid, &.container {\r\n    width: $percent-100;    \r\n    margin: 0 auto;\r\n    \r\n    \r\n  } \r\n  \r\n  &.row {\r\n    display: flex;\r\n      \r\n    &:before, &:after {\r\n      content:\"\";\r\n      /*display: table ;*/\r\n      clear:both;\r\n    }   \r\n    \r\n    \r\n  }\r\n\r\n  &.col {\r\n      background: purple;\r\n      width: calc-percent(1, $num-colums);\r\n  }\r\n\r\n} "
+	],
+	"mappings": "AIAA,UAAU;;AEAV,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,CAAE;EACV,UAAU,EAAE,UAAW;CACxB;;;AEFD,AAAA,GAAG,AACA,UAAU,CAAC;EACV,SAAS,EJCS,MAAM;CIAzB;;;AAHH,AAAA,GAAG,AAKA,gBAAgB,EALnB,AAAA,GAAG,AAKmB,UAAU,CAAC;EAC7B,KAAK,ENsCK,IAAI;EMrCd,MAAM,EAAE,MAAO;CAGhB;;;AAVH,AAAA,GAAG,AAYA,IAAI,CAAC;EACJ,OAAO,EAAE,IAAK;CASf;;;AAtBH,AAAA,GAAG,AAYA,IAAI,AAGF,OAAO,EAfZ,AAAA,GAAG,AAYA,IAAI,AAGQ,MAAM,CAAC;EAChB,OAAO,EAAC,EAAG;EACX,oBAAoB;EACpB,KAAK,EAAC,IAAK;CACZ;;;AAnBL,AAAA,GAAG,AAwBA,IAAI,CAAC;EACF,UAAU,EAAE,MAAO;EACnB,KAAK,EL3BA,QAAO;CK4Bf",
+	"names": []
+}

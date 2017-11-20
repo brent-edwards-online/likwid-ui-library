@@ -1,0 +1,18 @@
+div.container { 
+  height: 100px;
+  background: blue;
+  border: 1px solid red;
+}
+
+div.row { 
+  height: 100px;
+  background: green;
+  border: 1px solid limegreen;
+}
+
+div.col {
+  height: 30px;
+  /*background: grey;*/
+  border: 1px solid black;
+  /*width: 33.3333333333333333%;*/
+}
